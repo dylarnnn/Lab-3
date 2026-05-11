@@ -28,3 +28,19 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_ArrLenMoreThanTen():
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    result = Lab3.check(arr)
+    assert (result == 1)
+
+def test_ArrLeneEqualZero():
+    arr = []
+    result = Lab3.check(arr)
+    assert (result == 0)
+
+def test_StringsInArr():
+    arr = [2, "hi"]
+    result = Lab3.check(arr)
+    assert (result == 2)

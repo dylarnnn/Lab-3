@@ -11,4 +11,4 @@ def test_youresafefornow():
 
 def test_youreBONES():
     result = bmi.calculate_bmi(1.73, 40)
-    assert (result == -1)
+    assert (result == -.1)

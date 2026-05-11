@@ -38,6 +38,18 @@ def bubble_sort(arr, sorting_order):
 
     return arr_result
 
+def check(arr):
+    if len(arr) >= 10:
+        return 1
+    elif len(arr) == 0:
+        return 0
+    else:
+        for item in arr:
+            if type(item) == str:
+                return 2
+
+
+
 def main():
     # Driver code to test above
     arr = [64, 34, 25, 12, 22, 11, 90]
@@ -51,6 +63,8 @@ def main():
     print("Sorted array in descending order: ")
     result = bubble_sort(arr, SORT_DESCENDING)
     print(result)
+
+    check(arr)
 
 if __name__ == "__main__":
     main()
